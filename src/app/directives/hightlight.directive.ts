@@ -1,6 +1,6 @@
 import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 
-
+// 属性指令
 @Directive({
   selector: '[appHighlight]'
 })

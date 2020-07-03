@@ -8,7 +8,7 @@
     
     <ul class="list">
         数据列表
-        <li *ngFor="let item of historyList; let key = index" [ngClass]="getLiColor(key)" [hidden]="item.status == true">
+        <li *ngFor="let item of historyList; let key = index" [ngClass]="getLiColor(key)" [hidden]="item.status == true" appHighlight>
             <input type="checkbox" [(ngModel)]="item.status" (change)="changeStatus()"/>
             <span>{{item.keyword}}---{{item.status}}</span>
             <button (click)="deleteItem(key)">删除这个数据</button>
@@ -20,7 +20,7 @@
 
     <ul class="list">
         数据列表
-        <li *ngFor="let item of historyList; let key = index" [ngClass]="getLiColor(key)" [hidden]="item.status == false">
+        <li *ngFor="let item of historyList; let key = index" [ngClass]="getLiColor(key)" [hidden]="item.status == false" appHighlight>
             <input type="checkbox" [(ngModel)]="item.status" (change)="changeStatus()"/>
             <span>{{item.keyword}}---{{item.status}}</span>
             <button (click)="deleteItem(key)">删除这个数据</button>
