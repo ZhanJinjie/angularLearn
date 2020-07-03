@@ -1,0 +1,12 @@
+<input type="text" [(ngModel)]="keyword"> <button (click)="doSearch()">搜索</button>
+
+<hr>
+
+<ul>
+    数据列表
+    <li *ngFor="let item of historyList; let key = index" [ngClass]="getLiColor(key)">
+        <span>{{item}}</span>
+        <button (click)="deleteItem(key)">删除这个数据</button>
+    </li>
+    
+</ul>

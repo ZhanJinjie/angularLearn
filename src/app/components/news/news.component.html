@@ -1,0 +1,13 @@
+<p>输入后，enter清除输入框，点击空白处（blur）不清空输入框</p>
+<input #box (keyup.enter)="chick(box.value);box.value='';" (blur)="chick(box.value)">
+<p appHighlight defaultColor="violet">box.value:{{box.value}}</p>
+<p appHighlight>value:{{value}}</p>
+
+<br>
+
+<!-- @Input() highlightColor: string; -->
+<!-- <p appHighlight highlightColor="green">Highlighted in green</p>
+<p appHighlight [highlightColor]="'red'">Highlighted in red</p> -->
+
+<!-- @Input('appHighlight') highlightColor: string; -->
+<p [appHighlight]="'red'">Highlighted in red</p>

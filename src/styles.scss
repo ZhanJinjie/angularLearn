@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    overflow: hidden;
+}
+ul,ol {
+    list-style: none;
+}
+
+.commonZ {
+    width: 900px;
+    margin: 0 auto;
+    background-color: lavender;
+    border: 1px solid pink;
+}
